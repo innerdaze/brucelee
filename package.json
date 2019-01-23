@@ -4,9 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon ./src/main.js"
+    "discord:start": "nodemon ./src/main.discord.js",
+    "slack:start": "nodemon ./src/main.slack.js"
   },
   "dependencies": {
+    "@slack/client": "^4.8.0",
     "discord.js": "^11.4.2",
     "dotenv": "^6.2.0",
     "rxjs": "^6.3.3"
